@@ -602,7 +602,7 @@ prompts = [
 #     "A boy with yellow hair"
 # ]
 
-words_steps_dict, default_step = adaptive_calculate_steps(prompts, g_cpu)
+# words_steps_dict, default_step = adaptive_calculate_steps(prompts, g_cpu)
 
 controller_ini = AttentionRelation(prompts)
 _ = run_and_display([prompts[1]], controller_ini, latent=None, generator=torch.Generator().manual_seed(random_seed))
